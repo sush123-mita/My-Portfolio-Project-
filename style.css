@@ -1,0 +1,264 @@
+/* Reset padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center; /* Changed to 'center' for better alignment */
+    color: blueviolet;
+}
+
+.right ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.right ul li {
+    list-style: none;
+    padding: 5px;
+    margin: 2px;
+}
+
+.right ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem;
+    transition: transform 0.3s ease; /* Animation for 3D effect */
+}
+
+.right ul li a:hover {
+    transform: perspective(500px) rotateY(10deg); /* 3D rotation on hover */
+}
+
+/* Box section styling */
+.box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-left: auto; /* Center the box */
+    margin-right: auto;
+    border: 5px solid rgb(255, 255, 255);
+    color: rgb(206, 9, 68);
+    width: 500px;
+    height: 400px;
+    animation: slideIn 2s ease; /* Animation effect */
+}
+
+/* Content styling */
+.content {
+    font-size: 16px; /* Adjusted for readability */
+    color: rgb(192, 30, 65);
+}
+
+/* Skills section styling */
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+.heading{
+    color:rgb(56, 5, 5);
+}
+.skill > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    color: rgb(134, 23, 42);
+    width: 400px;
+    height: 300px;
+    transition: transform 0.3s ease; /* Animation for 3D effect */
+}
+
+.skill > div:hover {
+    transform: rotateY(15deg) rotateX(10deg); /* 3D rotation on hover */
+}
+.skill .skill1{
+    background-image: url(capture4.png) ;
+    background-size: cover;
+   
+}
+.skill .skill2{
+    background-image: url(Capture5.PNG) ;
+    background-size: cover;
+}
+.skill .skill3{
+    background-image: url(capture\ 3.PNG);
+    background-size: cover;
+}
+
+/* Text styling */
+.text {
+    display: flex;
+    color: rgb(185, 22, 123);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ending {
+    display: flex;
+    color: rgb(139, 8, 100);
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: 7px;
+    color: rgb(182, 25, 122);
+    border: 5px solid rgb(255, 255, 255);
+    width: 400px;
+    height: 300px;
+    animation: zoomIn 1.5s ease; /* Animation effect */
+    background-image: url(ending.webp);
+    background-size: cover;
+}
+
+body{
+    background-image: URL(ending.webp);
+    background-size: contain;
+}
+
+
+.profile,
+.xyz,
+.content {
+    color: rgb(131, 9, 66);
+}
+
+/* Image section */
+
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.hobby >div{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 7px;
+        color: white;
+        width: 300px;
+        height: 300px;
+        transition: transform 0.3s ease; /* Animation for 3D effect */
+}
+
+.hobby > div:hover {
+    transform: rotateY(15deg) rotateX(10deg); /* 3D rotation on hover */
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+.hobby .poem{
+    background-image: url(Capture\ 6.PNG);
+    background-size: cover;
+}
+.hobby .DANCE{
+    background-image: url(dnace.PNG);
+    background-size: cover;
+}
+.hobby .ASTRONOMY{
+    background-image: url(astro.PNG);
+    background-size: cover;
+}
+
+
+.box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    border-radius: 10px;
+    margin-right: auto;
+    border: 5px solid rgb(255, 255, 255);
+    color: white;
+    width: 500px;
+    height: 400px;
+    animation: slideIn 2s ease;
+    background-image: url(intro2.PNG);
+    background-size: cover;
+}
+.social>div{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    color: white;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease; /* Animation for 3D effect */
+}
+.social > div:hover {
+    transform: rotateY(15deg) rotateX(10deg); /* 3D rotation on hover */
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+.link{
+    background-image: url(linkdn.PNG);
+    background-size: cover;
+}
+.git{
+    background-image: url(githu.PNG);
+    background-size: cover;
+}
+.blog{
+    background-image: url(blog.PNG);
+    background-size: cover;
+}
+
+
